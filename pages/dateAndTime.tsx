@@ -1,5 +1,5 @@
 import React from "react";
-import { convertToString } from '../utils/dateAndTime';
+import { convertToString } from '../services/utils';
 
 const dateAndTime: React.FC = ({}) => {
     const today = convertToString(new Date);

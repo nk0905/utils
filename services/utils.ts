@@ -1,3 +1,8 @@
+/**
+ * 現在の日時を取得する
+ * @param d Dateオブジェクトのインスタンス
+ * @returns 年、月、日、曜日、時、分、秒、ミリ秒
+ */
 export const convertToString = (d: Date) => {
     const year = d.getFullYear(); // 年
     const month = d.getMonth() + 1; // 月は0~11の数値で返ってくるので+1する
