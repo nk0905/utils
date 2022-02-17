@@ -14,5 +14,14 @@ export const convertToString = (d: Date) => {
   const minutes = d.getMinutes(); //分
   const seconds = d.getSeconds(); //秒
   const milliSeconds = d.getMilliseconds(); //ミリ秒
-  return { year, month, date, dayname, hours, minutes, seconds, milliSeconds };
+  return {
+    year,
+    month,
+    date,
+    dayname,
+    hours,
+    minutes,
+    seconds,
+    milliSeconds,
+  };
 };
