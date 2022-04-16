@@ -18,6 +18,27 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
+## json-server
+
+* npm i -D json-server
+
+* .envにNEXT_PUBLIC_API_DOMAIN='http://localhost:3001'
+
+* db.jsonとroutes.jsonとmiddleware.jsを追加
+
+* axios導入
+  export const JsonApi = axios.create({
+
+    baseURL: process.env.NEXT_PUBLIC_API_DOMAIN,
+
+    headers: { 'Content-Type': 'application/json' },
+
+    responseType: 'json',
+
+  });
+
+* "mock": "json-server --watch _mock/db.json --port 3001 --routes _mock/routes.json --middlewares _mock/middleware.js --static _mock/extra-data --host 0.0.0.0",
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

@@ -2,9 +2,11 @@
   "name": "utils",
   "private": true,
   "scripts": {
+    "start:local": "npm-run-all --parallel mock dev",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "mock": "json-server --watch _mock/db.json --port 3001 --routes _mock/routes.json",
     "lint": "next lint",
     "lint:fix": "eslint --fix \"src/**/*.{ts,tsx}\"",
     "format": "prettier --check ./src",
@@ -20,6 +22,7 @@
     "@types/react": "17.0.38",
     "@typescript-eslint/eslint-plugin": "^5.12.0",
     "@typescript-eslint/parser": "^5.12.0",
+    "axios": "^0.26.1",
     "eslint": "^8.7.0",
     "eslint-config-next": "12.0.8",
     "eslint-config-prettier": "^8.3.0",
@@ -27,6 +30,8 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-unused-imports": "^2.0.0",
+    "json-server": "^0.17.0",
+    "npm-run-all": "^4.1.5",
     "prettier": "^2.5.1",
     "typescript": "4.5.5"
   }
