@@ -1,0 +1,21 @@
+
+# タイトルにemoji prefixをつける
+# 本文に修正意図などを記載
+# 
+# emoji prefix
+# ✨ :sparkles: 機能追加
+# 🎨 :art: デザイン変更
+# 👍 :+1: 機能改善
+# 🚧  :construction: WIP
+# 🐛 :bug: バグ修正
+# 🗒 :memo: 文言修正
+# 💪 :muscle: リファクタリング
+# 👕 :shirt: Lint修正
+# 💚 :green_heart: CI修正
+# 🚿 :shower: 機能削除
+# 👮‍♀️ :cop: セキュリティ改善
+# 🚀 :rocket: パフォーマンス改善
+# 🆙 :up: ライブラリなどのアップデート
+# 🔧 :wrench: configなど足回り変更
+# 📚 :books: ドキュメント
+# 🎉 :tada: リリース
