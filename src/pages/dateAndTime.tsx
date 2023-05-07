@@ -15,7 +15,7 @@ const DateAndTime: React.FC = () => {
         console.log(e);
       });
   }, []);
-  
+
   return (
     <div>
       <p>今日の日付と今の時間</p>
